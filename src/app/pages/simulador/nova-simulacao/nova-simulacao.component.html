@@ -1,0 +1,39 @@
+<section class="container-form">
+  <form class="formulario" (ngSubmit)="transferir()">
+    <h2 class="formulario__titulo">Nova Simulação</h2>
+
+    <div class="form-field">
+      <label class="form-field__label" for="Nome_solicitante">Nome do solicitante</label>
+      <input type="text" class="form-control" placeholder="Digite o nome..." [(ngModel)]="nome" name="nome" required>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field__label" for="valor">Valor</label>
+      <input type="text" class="form-control" placeholder="Digite o valor que deseja..." [(ngModel)]="valor" name="valor" required>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field__label" for="destino">Parcela</label>
+      <select class="form-select" binlabel="parcela" bindValue="id" [(ngModel)]="parcelas" name="parcelas">
+        <option selected value="">Selecione a parcela</option>
+        <option value="1">1x</option>
+        <option value="2">2x</option>
+        <option value="3">3x</option>
+        <option value="4">4x</option>
+        <option value="5">5x</option>
+        <option value="6">6x</option>
+        <option value="7">7x</option>
+        <option value="8">8x</option>
+        <option value="9">9x</option>
+        <option value="10">10x</option>
+        <option value="11">11x</option>
+        <option value="12">12x</option>
+      </select>
+    </div>
+
+    <div class="botao-wrapper">
+      <button class="botao__voltar" (click)="cancelar()">Voltar</button>
+      <button class="botao__confirmar" type="submit">Confirmar</button>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,25 @@
+{
+  "lista-simulacao": [
+    {
+      "nome": "Expedito Neto",
+      "valor": 2.2,
+      "parcelas": "2",
+      "data": "2022-09-09T03:02:43.406Z",
+      "id": 1
+    },
+    {
+      "nome": "Expedito Pereira de Paiva Neto",
+      "valor": 20.4,
+      "parcelas": "4",
+      "data": "2022-09-09T03:06:29.439Z",
+      "id": 2
+    },
+    {
+      "nome": "teste",
+      "valor": 22244.4,
+      "parcelas": "4",
+      "data": "2022-09-09T03:06:39.354Z",
+      "id": 3
+    }
+  ]
+}

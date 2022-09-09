@@ -1,0 +1,24 @@
+<section class="container-table">
+  <h2 class="titulo">Lista de Simulações</h2>
+  <table class="table table-striped table-hover">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Data</th>
+      <th class="tabela__cabecalho__conteudo">Nome</th>
+      <th class="tabela__cabecalho__conteudo">Valor</th>
+      <th class="tabela__cabecalho__conteudo">Nº Parcelas</th>
+    </thead>
+    <tbody *ngIf="!!simulacoes; else listaVazia">
+      <tr class="tabela__linha" *ngFor="let simulacao of simulacoes">
+        <td class="tabela__conteudo">
+          {{ simulacao.data | date: "short" }}
+        </td>
+        <td class="tabela__conteudo">{{ simulacao.nome }}</td>
+        <td class="tabela__conteudo">{{ simulacao.valor | currency }}</td>
+        <td class="tabela__conteudo">{{ simulacao.parcelas }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #listaVazia>
+    <p>Nenhuma simulação cadastrada</p>
+  </ng-template>
+</section>
